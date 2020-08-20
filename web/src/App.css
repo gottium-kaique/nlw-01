@@ -1,0 +1,48 @@
+:root {
+  --primary-color: #34CB79;
+  --title-color: #322153;
+  --text-color: #6C6C80;
+  --background: #F0F0F5;
+  --background-light: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #334;
+    --background-light: #445;
+    --title-color: #fff;
+  }
+}
+
+button, a {
+  text-transform: uppercase;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  -webkit-font-smoothing: antialiased;
+  color: var(--text-color);
+}
+
+body, input, button {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--title-color);
+  font-family: Ubuntu;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #34CB79
+}
